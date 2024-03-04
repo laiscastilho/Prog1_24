@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection.Metadata;
 using Microsoft.VisualBasic;
 
 //Trabalhando com variáveis C#endregion
@@ -29,3 +30,19 @@ Console.WriteLine("Qual é o seu nome?");
 nome = Console.ReadLine();
 string resultado = $"Oi, {nome}! Pare de jaquarice!";
 Console.WriteLine(resultado);
+
+// Subtituindo conteúdo de strings
+string nomeCompleto ="Layne Laís de Castilho Firmino";
+nomeCompleto =
+    nomeCompleto.Replace("Layne", "Laisa");
+Console.WriteLine(nomeCompleto);
+
+//Comparação de strings
+bool isNomeEqual =
+(nomeCompleto == "Layne Laís de Castilho Firmino");
+
+bool isNomeEqual2 = 
+    string.Equals(nomeCompleto, "Laisa Laís de Catilho Firmino");
+
+Console.WriteLine($"Primeiro: {isNomeEqual}");
+Console.WriteLine($"Segundo: {isNomeEqual2}");
