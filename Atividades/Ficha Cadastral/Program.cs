@@ -12,7 +12,7 @@ string cidade = System.String.Empty;
 string uf = System.String.Empty;
 string paiis = System.String.Empty;
 
-Console.WriteLine("Digite seu nome:");
+Console.WriteLine("Digite seu nome:"); /* Ler linha*/
 nome = Console.ReadLine();
 
 Console.WriteLine("\nDigite seu E-mail:");
